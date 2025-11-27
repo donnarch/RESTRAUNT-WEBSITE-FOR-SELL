@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Restaurant — Home</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="theme-light">
+    <!-- Site Header / Navigation (used on all pages) -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="./index.html"
+          aria-label="Restaurant Home"
+          style="font-size: 26px"
+          >Savoria</a
+        >
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <nav id="main-nav" class="main-nav" role="navigation">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./chefs.html">Our Chefs</a></li>
+            <li><a href="./stars.html">Reviews</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./contact.html">Book a Table</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            id="theme-toggle"
+            class="btn-icon"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            🌓
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home Page Content -->
+    <main>
+      <!-- 1. Home -->
+      <section class="hero" id="home" aria-labelledby="home-heading">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 id="home-heading">A Modern Dining Experience</h1>
+            <p class="lead">
+              Seasonal ingredients, masterful chefs, and an unforgettable
+              atmosphere. Join us for an exceptional culinary journey.
+            </p>
+            <p class="hero-cta">
+              <a class="btn" href="./menu.html">Explore Menu</a>
+              <a class="btn btn-outline" href="./contact.html">Book a Table</a>
+            </p>
+
+            <div class="stats">
+              <div class="stat">
+                <span class="stat-number" data-target="120">0</span>
+                <span class="stat-label">Dishes</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="8">0</span>
+                <span class="stat-label">Chefs</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="4500">0</span>
+                <span class="stat-label">Happy Guests</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <img
+              src="../image/alexandra-tran-fWfRv-qdlUU-unsplash.jpg"
+              alt="Delicious plated dish"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Featured (Small promo, anchored) -->
+      <section
+        class="container section promo"
+        id="featured"
+        aria-label="Featured tasting menu"
+      >
+        <h2 class="section-title">This Month's Tasting Menu</h2>
+        <p class="section-intro">
+          A specially curated 6-course tasting menu celebrating local produce.
+        </p>
+
+        <div class="cards grid-3">
+          <article
+            class="card tilt"
+            tabindex="0"
+            aria-label="Tasting: Sea Bass"
+          >
+            <img
+              src="../image/tharum-bun-EmMKDcgl9PA-unsplash.jpg"
+              alt="Sea bass dish"
+            />
+            <div class="card-body">
+              <h3>Seared Sea Bass</h3>
+              <p class="muted">Citrus butter • seasonal greens</p>
+              <p class="price">$28</p>
+            </div>
+          </article>
+
+          <article
+            class="card tilt"
+            tabindex="0"
+            aria-label="Tasting: Beet Salad"
+          >
+            <img
+              src="../image/kodo-tenco-xbwMkgORF5U-unsplash.jpg"
+              alt="Beet salad"
+            />
+            <div class="card-body">
+              <h3>Roasted Beet Salad</h3>
+              <p class="muted">Goat cheese • candied walnuts</p>
+              <p class="price">$14</p>
+            </div>
+          </article>
+
+          <article
+            class="card tilt"
+            tabindex="0"
+            aria-label="Tasting: Chocolate"
+          >
+            <img
+              src="../image/pure-julia-w5-cKXOVISU-unsplash.jpg"
+              alt="Chocolate dessert"
+            />
+            <div class="card-body">
+              <h3>Dark Chocolate Tart</h3>
+              <p class="muted">Hazelnut crumble</p>
+              <p class="price">$10</p>
+            </div>
+          </article>
+          <article
+            class="card tilt"
+            tabindex="0"
+            aria-label="Tasting: Chocolate"
+          >
+            <img
+              src="../image/ling-tang-8gz8DKb8kss-unsplash.jpg"
+              alt="white chocolate dessert"
+            />
+            <div class="card-body">
+              <h3>White Chocolate Tart</h3>
+              <p class="muted">Zeraknult crumble</p>
+              <p class="price">$15</p>
+            </div>
+          </article>
+          <article
+            class="card tilt"
+            tabindex="0"
+            aria-label="Tasting: Chocolate"
+          >
+            <img
+              src="../image/katie-rosario-QNyRp21hb5I-unsplash.jpg"
+              alt="Chocolate dessert"
+            />
+            <div class="card-body">
+              <h3>Cake for Parties</h3>
+              <p class="muted">Hazelnut crumble</p>
+              <p class="price">$10</p>
+            </div>
+          </article>
+          <article
+            class="card tilt"
+            tabindex="0"
+            aria-label="Tasting: Chocolate"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1200&auto=format&fit=crop&s=placeholder"
+              alt="Chocolate dessert"
+            />
+            <div class="card-body">
+              <h3>All in one</h3>
+              <p class="muted">Sea bass,Beat salad,Chocolate tarts</p>
+              <p class="price">$50</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. Quick Links / Sections -->
+      <section
+        class="container section small-sections"
+        aria-label="Quick links"
+      >
+        <div class="grid-3">
+          <a class="panel" href="./about.html" tabindex="0">
+            <h4>About Us</h4>
+            <p>Our philosophy, story, and sourcing.</p>
+          </a>
+          <a class="panel" href="./chefs.html" tabindex="0">
+            <h4>Meet the Chefs</h4>
+            <p>Get to know our culinary artists.</p>
+          </a>
+          <a class="panel" href="./stars.html" tabindex="0">
+            <h4>Customer Reviews</h4>
+            <p>What diners are saying.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (shared) -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="./index.html">ModernBite</a>
+          <p class="muted">123 Flavor St, City • Open Tue–Sun 5pm–11pm</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="contact.html">Book</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div class="container copyright">
+        <small>© <span id="year"></span> ModernBite — Crafted with care.</small>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scroll-top"
+      class="scroll-top"
+      aria-label="Scroll to top"
+      title="Scroll to top"
+    >
+      ↑
+    </button>
+  </body>
+  <script src="../js/app.js"></script>
+</html>

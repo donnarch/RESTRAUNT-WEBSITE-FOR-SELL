@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Restaurant — Reviews</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="theme-light">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">ModernBite</a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <nav id="main-nav" class="main-nav" role="navigation">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./chefs.html">Our Chefs</a></li>
+            <li><a href="./stars.html" aria-current="page">Reviews</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./contact.html">Book a Table</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            id="theme-toggle"
+            class="btn-icon"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            🌓
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 4. Reviews -->
+      <section
+        class="container section reviews"
+        id="reviews"
+        aria-labelledby="reviews-heading"
+      >
+        <h1 id="reviews-heading">Guest Reviews</h1>
+        <p class="section-intro">Real feedback from our diners.</p>
+
+        <div class="review-slider" id="review-slider" role="list">
+          <article class="review-card tilt" tabindex="0" role="listitem">
+            <p class="rating">★★★★★</p>
+            <p class="quote">
+              "A truly wonderful evening — food was sublime and service
+              impeccable."
+            </p>
+            <p class="author">— Jamie K.</p>
+          </article>
+
+          <article class="review-card tilt" tabindex="0" role="listitem">
+            <p class="rating">★★★★★</p>
+            <p class="quote">
+              "Creative dishes with thoughtful flavors. The tasting menu was a
+              highlight."
+            </p>
+            <p class="author">— Rosa M.</p>
+          </article>
+
+          <article class="review-card tilt" tabindex="0" role="listitem">
+            <p class="rating">★★★★☆</p>
+            <p class="quote">
+              "Lovely ambience and friendly staff — desserts were exceptional."
+            </p>
+            <p class="author">— Daniel P.</p>
+          </article>
+          <article class="review-card tilt" tabindex="0" role="listitem">
+            <p class="rating">★★★★☆</p>
+            <p class="quote">
+              “Amazing experience! The staff made us feel welcome, and the
+              pastries were absolutely delightful.” "
+            </p>
+            <p class="author">— Emma L.</p>
+          </article>
+          <article class="review-card tilt" tabindex="0" role="listitem">
+            <p class="rating">★★★★</p>
+            <p class="quote">
+              “Cozy atmosphere with attentive service. I especially loved the
+              chocolate cake — truly decadent!”
+            </p>
+            <p class="author">- Michael R.</p>
+          </article>
+          <article class="review-card tilt" tabindex="0" role="listitem">
+            <p class="rating">★★★★☆</p>
+            <p class="quote">
+              “A charming place to relax. The coffee was perfectly brewed and
+              the staff were very kind.”
+            </p>
+            <p class="author">— Sophia K.</p>
+          </article>
+          <article class="review-card tilt" tabindex="0" role="listitem">
+            <p class="rating">★★★★☆</p>
+            <p class="quote">
+              “Really enjoyed my visit. Friendly team, great drinks, and the
+              tiramisu was out of this world!”
+            </p>
+            <p class="author">— Robert.</p>
+          </article>
+          <article class="review-card tilt" tabindex="0" role="listitem">
+            <p class="rating">★★★★★★</p>
+            <p class="quote">
+              “Fantastic spot! The ambiance is inviting, and the desserts are
+              top-notch — I’ll definitely return.”
+            </p>
+            <p class="author">-David P.</p>
+          </article>
+        </div>
+
+        <div class="slider-controls" aria-hidden="false">
+          <button
+            id="prev-review"
+            class="btn btn-ghost"
+            aria-label="Previous review"
+          >
+            ‹
+          </button>
+          <button
+            id="next-review"
+            class="btn btn-ghost"
+            aria-label="Next review"
+          >
+            ›
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="./index.html">ModernBite</a>
+          <p class="muted">123 Flavor St, City • Open Tue–Sun 5pm–11pm</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./contact.html">Book</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div class="container copyright">
+        <small>© <span id="year"></span> ModernBite — Crafted with care.</small>
+      </div>
+    </footer>
+
+    <button
+      id="scroll-top"
+      class="scroll-top"
+      aria-label="Scroll to top"
+      title="Scroll to top"
+    >
+      ↑
+    </button>
+  </body>
+  <script src="../js/app.js"></script>
+</html>

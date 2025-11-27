@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Restaurant — Our Chefs</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="theme-light">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">ModernBite</a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <nav id="main-nav" class="main-nav" role="navigation">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./chefs.html" aria-current="page">Our Chefs</a></li>
+            <li><a href="./stars.html">Reviews</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./contact.html">Book a Table</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            id="theme-toggle"
+            class="btn-icon"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            🌓
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 3. Our Chefs -->
+      <section
+        class="container section chefs"
+        id="chefs"
+        aria-labelledby="chefs-heading"
+      >
+        <h1 id="chefs-heading">Meet Our Chefs</h1>
+        <p class="section-intro">
+          A team of passionate culinary artists driving the menu forward.
+        </p>
+
+        <div class="cards grid-3">
+          <article class="card chef-card tilt" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop&s=placeholder"
+              alt="Chef portrait"
+            />
+            <div class="card-body">
+              <h3>Chef Lina Moretti</h3>
+              <p class="muted">Head Chef — Italian-inspired technique</p>
+              <p class="bio">
+                Lina brings refined classic technique with a modern, seasonal
+                touch.
+              </p>
+            </div>
+          </article>
+
+          <article class="card chef-card tilt" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1528715471579-d1a6a254b2ab?q=80&w=1200&auto=format&fit=crop&s=placeholder"
+              alt="Chef portrait"
+            />
+            <div class="card-body">
+              <h3>Chef Marcus Lee</h3>
+              <p class="muted">Sous Chef — Flavor innovator</p>
+              <p class="bio">
+                Marcus focuses on savory-sweet balances and creative plating.
+              </p>
+            </div>
+          </article>
+
+          <article class="card chef-card tilt" tabindex="0">
+            <img
+              src="https://images.unsplash.com/photo-1541542684-1b2f4d2b8d29?q=80&w=1200&auto=format&fit=crop&s=placeholder"
+              alt="Chef portrait"
+            />
+            <div class="card-body">
+              <h3>Chef Aisha Khan</h3>
+              <p class="muted">Pastry Chef — Dessert specialist</p>
+              <p class="bio">
+                Aisha crafts desserts that are light, bright, and full of
+                texture.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="./index.html">ModernBite</a>
+          <p class="muted">123 Flavor St, City • Open Tue–Sun 5pm–11pm</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./contact.html">Book</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div class="container copyright">
+        <small>© <span id="year"></span> ModernBite — Crafted with care.</small>
+      </div>
+    </footer>
+
+    <button
+      id="scroll-top"
+      class="scroll-top"
+      aria-label="Scroll to top"
+      title="Scroll to top"
+    >
+      ↑
+    </button>
+  </body>
+  <script src="../js/app.js"></script>
+</html>

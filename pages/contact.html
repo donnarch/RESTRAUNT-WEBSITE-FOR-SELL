@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Restaurant — Book a Table</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="theme-light">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">ModernBite</a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <nav id="main-nav" class="main-nav" role="navigation">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./chefs.html">Our Chefs</a></li>
+            <li><a href="./stars.html">Reviews</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li>
+              <a href="./contact.html" aria-current="page">Book a Table</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            id="theme-toggle"
+            class="btn-icon"
+            aria-pressed="false"
+            title="Toggle dark mode"
+          >
+            🌓
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 6. Book a Table -->
+      <section
+        class="container section book"
+        id="book"
+        aria-labelledby="book-heading"
+      >
+        <div class="book-grid">
+          <div class="book-info">
+            <h1 id="book-heading">Reserve Your Table</h1>
+            <p class="section-intro">
+              Quick and easy booking—confirmation appears instantly on submit.
+            </p>
+            <p>Prefer to call? (123) 456-7890</p>
+          </div>
+
+          <form
+            id="booking-form"
+            class="booking-form card"
+            aria-label="Table booking form"
+          >
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" required />
+            </div>
+
+            <div class="form-row grid-2">
+              <div>
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date" required />
+              </div>
+
+              <div>
+                <label for="time">Time</label>
+                <input id="time" name="time" type="time" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="guests">Number of guests</label>
+              <input
+                id="guests"
+                name="guests"
+                type="number"
+                min="1"
+                max="20"
+                value="2"
+                required
+              />
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Confirm Booking</button>
+              <button type="reset" class="btn btn-outline">Reset</button>
+            </div>
+
+            <div
+              id="booking-message"
+              aria-live="polite"
+              class="booking-message"
+              hidden
+            ></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="./index.html">ModernBite</a>
+          <p class="muted">123 Flavor St, City • Open Tue–Sun 5pm–11pm</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./contact.html">Book</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div class="container copyright">
+        <small>© <span id="year"></span> ModernBite — Crafted with care.</small>
+      </div>
+    </footer>
+
+    <button
+      id="scroll-top"
+      class="scroll-top"
+      aria-label="Scroll to top"
+      title="Scroll to top"
+    >
+      ↑
+    </button>
+  </body>
+  <script src="../js/app.js"></script>
+</html>
